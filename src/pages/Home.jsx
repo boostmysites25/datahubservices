@@ -54,7 +54,7 @@ const Home = () => {
           <p className="sub-heading">
             Welcome to{" "}
             <span className="text-primary font-semibold block sm:inline">
-              Data Hub Services
+              Advance Data Hub
             </span>
           </p>
           <h1 className="heading capitalize">
@@ -154,7 +154,7 @@ const Home = () => {
                 <p className="desc">
                   At{" "}
                   <span className="font-medium text-primary">
-                    Data Hub Services
+                    Advance Data Hub
                   </span>
                   , we pride ourselves on staying ahead of the curve with the
                   latest technological advancements, helping businesses thrive

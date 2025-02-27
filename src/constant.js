@@ -135,35 +135,35 @@ export const testimonials = [
     name: "Sarah L",
     position: "CEO, FinTech Innovators",
     img: require("./assets/images/testimonial3.png"),
-    desc: "“Collaborating with Data Hub Services was a pivotal moment for our company. They helped us develop a blockchain solution that significantly improved security and transparency in our operations. The team's deep understanding of blockchain technology, along with their collaborative approach, allowed them to build a solution that was not only innovative but also aligned perfectly with our business goals.”",
+    desc: "“Collaborating with Advance Data Hub was a pivotal moment for our company. They helped us develop a blockchain solution that significantly improved security and transparency in our operations. The team's deep understanding of blockchain technology, along with their collaborative approach, allowed them to build a solution that was not only innovative but also aligned perfectly with our business goals.”",
   },
   {
     id: 2,
     name: "David P",
     position: "Director of Operations, Global Logistics",
     img: require("./assets/images/testimonial1.png"),
-    desc: "“We approached Data Hub Services for a blockchain solution that would streamline our processes. They delivered beyond expectations, providing us with a secure and scalable platform. The team’s technical knowledge, combined with their ability to translate our needs into a concrete solution, made this project a success.”",
+    desc: "“We approached Advance Data Hub for a blockchain solution that would streamline our processes. They delivered beyond expectations, providing us with a secure and scalable platform. The team’s technical knowledge, combined with their ability to translate our needs into a concrete solution, made this project a success.”",
   },
   {
     id: 3,
     name: "Emily T",
     position: "Marketing Manager, Retail Solutions",
     img: require("./assets/images/testimonial2.png"),
-    desc: "“Our app was a crucial part of our business, and Data Hub Services did an outstanding job bringing our vision to life. From the initial concept to final launch, their team demonstrated exceptional expertise. The app is user-friendly, performs seamlessly, and has helped us engage with our customers like never before.”",
+    desc: "“Our app was a crucial part of our business, and Advance Data Hub did an outstanding job bringing our vision to life. From the initial concept to final launch, their team demonstrated exceptional expertise. The app is user-friendly, performs seamlessly, and has helped us engage with our customers like never before.”",
   },
   {
     id: 4,
     name: "Michael R",
     position: "Founder, HealthTech Innovations",
     img: require("./assets/images/testimonial4.jpg"),
-    desc: "“We needed an app that would serve both our business and our customers, and Data Hub Services exceeded our expectations. They created a beautiful and functional app, and the ongoing support has been invaluable in ensuring the app continues to meet our growing needs.”",
+    desc: "“We needed an app that would serve both our business and our customers, and Advance Data Hub exceeded our expectations. They created a beautiful and functional app, and the ongoing support has been invaluable in ensuring the app continues to meet our growing needs.”",
   },
   {
     id: 5,
     name: "Alexandra M",
     position: "COO, Data Solutions Co",
     img: require("./assets/images/testimonial5.jpg"),
-    desc: "“With the help of Data Hub Services, we successfully integrated machine learning to optimize our operations. They developed a model that continuously learns from new data, providing us with actionable insights that help streamline our processes and improve efficiency.”",
+    desc: "“With the help of Advance Data Hub, we successfully integrated machine learning to optimize our operations. They developed a model that continuously learns from new data, providing us with actionable insights that help streamline our processes and improve efficiency.”",
   },
 ];
 
@@ -176,7 +176,7 @@ export const allServices = [
       "We craft high-performance websites that deliver exceptional digital experiences tailored to your business needs.",
     icon: allServiceIcon1,
     detailHeading: "Web Development: Build Websites That Work for You",
-    detailContent: `<p>Your website is often the first impression customers have of your business. At Data Hub Services, we specialize in creating custom websites that are not only visually stunning but also highly functional and scalable. Our web development services include:</p>
+    detailContent: `<p>Your website is often the first impression customers have of your business. At Advance Data Hub, we specialize in creating custom websites that are not only visually stunning but also highly functional and scalable. Our web development services include:</p>
     <br/>
     <ol>
       <li><b>Custom Website Design:</b><br/>We design and develop websites that reflect your brand identity and align with your business goals.</li>
@@ -196,7 +196,7 @@ export const allServices = [
       "We create intuitive, feature-rich mobile apps that solve real-world problems and deliver exceptional user experiences.",
     icon: allServiceIcon2,
     detailHeading: "App Development: Mobile Solutions That Make an Impact",
-    detailContent: `<p>In today’s mobile-driven world, having a powerful app is essential. At Data Hub Services, we develop custom mobile applications that are user-friendly, feature-packed, and designed to meet your specific goals. Our app development services include:</p>
+    detailContent: `<p>In today’s mobile-driven world, having a powerful app is essential. At Advance Data Hub, we develop custom mobile applications that are user-friendly, feature-packed, and designed to meet your specific goals. Our app development services include:</p>
       <br/>
       <ol>
         <li><b>Native App Development:</b><br/>We build high-performance apps for iOS and Android, ensuring a seamless user experience on both platforms.</li>
@@ -216,7 +216,7 @@ export const allServices = [
       "We design intelligent AI systems that automate tasks, enhance decision-making, and drive innovation across industries.",
     icon: allServiceIcon3,
     detailHeading: "AI Development: Smarter Solutions for a Smarter Future",
-    detailContent: `<p>Artificial Intelligence is transforming the way businesses operate. At Data Hub Services, we develop cutting-edge AI solutions that help you automate processes, make data-driven decisions, and stay ahead of the competition. Our AI development services include:</p>
+    detailContent: `<p>Artificial Intelligence is transforming the way businesses operate. At Advance Data Hub, we develop cutting-edge AI solutions that help you automate processes, make data-driven decisions, and stay ahead of the competition. Our AI development services include:</p>
       <br/>
       <ol>
         <li><b>Custom AI Models:</b><br/>We build AI systems tailored to your unique needs, from chatbots to predictive analytics tools.</li>
@@ -237,9 +237,9 @@ export const allServices = [
     icon: allServiceIcon4,
     detailHeading:
       "Machine Learning Services: Data-Driven Solutions for Success",
-    detailContent: `<p>Machine Learning is the key to unlocking the full potential of your data. At Data Hub Services, we develop ML models that help you automate processes, predict trends, and deliver personalized experiences. Our ML services include:</p>
+    detailContent: `<p>Machine Learning is the key to unlocking the full potential of your data. At Advance Data Hub, we develop ML models that help you automate processes, predict trends, and deliver personalized experiences. Our ML services include:</p>
       <br/>
-      <ol>
+      <ol class="space-y-2">
         <li><b>Predictive Analysis:</b><br/>Predictive analytics leverages historical data, machine learning, and statistical algorithms to forecast future outcomes. In real-time projects, it enables businesses to make instant decisions by analyzing live data streams. Industries like finance, healthcare, and e-commerce use predictive models for fraud detection, patient risk assessment, and dynamic pricing.</li>
         <br/>
         <li><b>Automation:</b> <br/>Automation in real-time projects integrates AI, machine learning, IoT, and cloud computing to streamline operations, reduce manual effort, and enhance decision-making. It works by continuously collecting data from sensors, APIs, or user interactions, processing it instantly using algorithms, and executing predefined actions based on insights.<br/><br/>
@@ -284,7 +284,7 @@ export const allServices = [
       "We transform raw data into actionable insights, helping you make informed decisions and achieve your business objectives.",
     icon: allServiceIcon5,
     detailHeading: "Data Science Services: Turning Data into Opportunities",
-    detailContent: `<p>Data is one of your most valuable assets. At Data Hub Services, we help you unlock its potential with advanced data science solutions. Our services include:</p>
+    detailContent: `<p>Data is one of your most valuable assets. At Advance Data Hub, we help you unlock its potential with advanced data science solutions. Our services include:</p>
       <br/>
       <ol>
         <li><b>Data Analysis:</b><br/>We analyze your data to uncover trends, patterns, and opportunities that inform your strategy.</li>
@@ -304,7 +304,7 @@ export const allServices = [
       "We develop Natural Language Processing solutions that help you analyze and understand human language for better decision-making.",
     icon: allServiceIcon6,
     detailHeading: "NLP: Unlocking the Power of Language",
-    detailContent: `<p>Natural Language Processing (NLP) enables businesses to analyze and interpret text and speech data. At Data Hub Services, we develop NLP solutions that help you gain valuable insights from language data. Our services include:</p>
+    detailContent: `<p>Natural Language Processing (NLP) enables businesses to analyze and interpret text and speech data. At Advance Data Hub, we develop NLP solutions that help you gain valuable insights from language data. Our services include:</p>
       <br/>
       <ol>
         <li><b>Text Analysis:</b><br/>Extract meaningful insights from unstructured text data, such as customer feedback and social media posts.</li>
@@ -325,7 +325,7 @@ export const allServices = [
     icon: allServiceIcon7,
     detailHeading:
       "Blockchain Development: Trust, Transparency, and Innovation",
-    detailContent: `<p>Blockchain technology is revolutionizing industries by providing secure, transparent, and decentralized solutions. At Data Hub Services, we develop blockchain solutions that help you build trust and streamline operations. Our services include:</p>
+    detailContent: `<p>Blockchain technology is revolutionizing industries by providing secure, transparent, and decentralized solutions. At Advance Data Hub, we develop blockchain solutions that help you build trust and streamline operations. Our services include:</p>
       <br/>
       <ol>
         <li><b>Smart Contracts:</b><br/>Automate and enforce agreements with self-executing contracts that eliminate intermediaries.</li>

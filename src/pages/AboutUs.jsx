@@ -54,7 +54,7 @@ const AboutUs = () => {
               <p className="desc">
                 At{" "}
                 <span className="font-semibold text-primary">
-                  Data Hub Services
+                  Advance Data Hub
                 </span>
                 , we bring your digital ideas to life. Whether you're a thriving
                 startup or a well-established enterprise, our expert team of

@@ -56,7 +56,7 @@ const LandingPage = ({ page }) => {
           <p className="sub-heading">
             Welcome to{" "}
             <span className="text-primary font-semibold block sm:inline">
-              Data Hub Services
+              Advance Data Hub
             </span>
           </p>
           <h1 className="heading text-transparent bg-gradient-to-r from-[#91851e] to-primary bg-clip-text">

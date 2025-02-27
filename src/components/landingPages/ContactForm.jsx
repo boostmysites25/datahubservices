@@ -79,7 +79,7 @@ const ContactForm = () => {
             Let’s Connect!
           </h2>
           <p data-aos="fade-up" className="desc text-center max-w-[60rem]">
-            Let Data Hub Services drive your digital transformation. Together,
+            Let Advance Data Hub drive your digital transformation. Together,
             we’ll create solutions as dynamic as your vision, empowering your
             business to reach new heights.
           </p>
