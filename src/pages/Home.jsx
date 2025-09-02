@@ -7,6 +7,7 @@ import { ReactComponent as Icon1 } from "../assets/svgs/services/Web Development
 import { ReactComponent as Icon2 } from "../assets/svgs/services/App Development.svg";
 import { ReactComponent as Icon3 } from "../assets/svgs/services/Blockchain.svg";
 import WorkProcess from "../components/WorkProcess";
+import SEO from "../components/SEO";
 
 const WebsiteHeader = React.lazy(() =>
   import("../components/website/WebsiteHeader")
@@ -30,8 +31,37 @@ const WhyChooseUs = React.lazy(() => import("../components/WhyChooseUs"));
 const LeadForm = React.lazy(() => import("../components/LeadForm"));
 
 const Home = () => {
+  const homeStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Advance Data Hub - Home",
+    "description": "Cutting-Edge IT Solutions for the Digital Age. Smart Solutions, Strong Ethics – Driving Innovation with Integrity.",
+    "url": "https://www.advancedatahub.com/",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Advance Data Hub",
+      "description": "Leading provider of AI development, web development, app development, data science, machine learning, NLP, and blockchain solutions.",
+      "url": "https://www.advancedatahub.com",
+      "logo": "https://www.advancedatahub.com/logo.png",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8630103782",
+        "contactType": "customer service",
+        "email": "advancedatahub@gmail.com"
+      }
+    }
+  };
+
   return (
     <>
+      <SEO 
+        title="Cutting-Edge IT Solutions for the Digital Age"
+        description="Smart Solutions, Strong Ethics – Driving Innovation with Integrity. Advance Data Hub provides cutting-edge AI, web development, app development, data science, and blockchain solutions."
+        keywords="IT solutions, AI development, web development, app development, data science, blockchain, machine learning, custom software, digital transformation"
+        canonical="/"
+        structuredData={homeStructuredData}
+      />
       <WebsiteHeader />
       <section className="h-screen relative text-primary_text">
         <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background via-background/60 to-background"></div>

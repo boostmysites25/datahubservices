@@ -2,6 +2,7 @@ import React, { lazy } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { companyDetails } from "../constant";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 const WebsiteHeader = lazy(() => import("../components/website/WebsiteHeader"));
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
 const WebsiteFooter = lazy(() => import("../components/website/WebsiteFooter"));
@@ -10,8 +11,44 @@ const LeadForm = lazy(() => import("../components/LeadForm"));
 const MapComponent = lazy(() => import("../components/website/MapComponent"));
 
 const ContactUs = () => {
+  const contactStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Advance Data Hub",
+    "description": "Get in touch with our expert team for AI development, web development, app development, and other IT services. We're here to bring your digital vision to life.",
+    "url": "https://www.advancedatahub.com/contact-us",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Advance Data Hub",
+      "url": "https://www.advancedatahub.com",
+      "logo": "https://www.advancedatahub.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8630103782",
+        "contactType": "customer service",
+        "email": "advancedatahub@gmail.com",
+        "areaServed": "IN",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "H.No-14, Bhairav Mandir Colony, Kankhal",
+        "addressLocality": "Haridwar",
+        "addressRegion": "Uttarakhand",
+        "addressCountry": "IN"
+      }
+    }
+  };
+
   return (
     <>
+      <SEO 
+        title="Contact Us - Get in Touch with Our Expert Team"
+        description="Get in touch with our expert team for AI development, web development, app development, and other IT services. We're here to bring your digital vision to life."
+        keywords="contact us, IT services, AI development, web development, app development, software development, consultation, support"
+        canonical="/contact-us"
+        structuredData={contactStructuredData}
+      />
       <WebsiteHeader />
       <PageBanner title="Contact Us" />
       <div className="pt-[3rem]">

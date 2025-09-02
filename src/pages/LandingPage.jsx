@@ -6,6 +6,7 @@ import { appDevelopmentServices, webDevelopmentServices } from "../constant";
 import TrustWorthySection from "../components/TrustWorthySection";
 import appDevAboutImg from "../assets/images/landingpage/app-dev-about.jpg";
 import webDevAboutImg from "../assets/images/landingpage/web-dev-about.jpg";
+import SEO from "../components/SEO";
 
 const LandingHeader = lazy(() =>
   import("../components/landingPages/LandingHeader")
@@ -35,8 +36,62 @@ const LandingPage = ({ page }) => {
     services = appDevelopmentServices;
   }
 
+  // Dynamic SEO data based on page type
+  const getSEOData = () => {
+    if (page === "web-development") {
+      return {
+        title: "Web Development Services - High-Impact Websites That Drive Results",
+        description: "Cutting-Edge Web Solutions Built on Trust – Empowering Your Digital Growth. Custom websites, e-commerce platforms, and web applications tailored to your business needs.",
+        keywords: "web development, custom websites, e-commerce websites, web applications, responsive design, SEO-friendly websites, landing pages",
+        canonical: "/web-development",
+        structuredData: {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Web Development Services",
+          "description": "Custom websites, e-commerce platforms, and web applications tailored to business needs",
+          "provider": {
+            "@type": "Organization",
+            "name": "Advance Data Hub",
+            "url": "https://www.advancedatahub.com"
+          },
+          "serviceType": "Web Development",
+          "areaServed": "Worldwide"
+        }
+      };
+    } else {
+      return {
+        title: "App Development Services - Forward-Thinking Mobile Solutions",
+        description: "Intelligent App Solutions with Strong Ethical Foundations – Innovating with Purpose. iOS, Android, and cross-platform mobile app development services.",
+        keywords: "app development, mobile apps, iOS development, Android development, Flutter apps, hybrid apps, custom mobile applications",
+        canonical: "/app-development",
+        structuredData: {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "App Development Services",
+          "description": "iOS, Android, and cross-platform mobile app development services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Advance Data Hub",
+            "url": "https://www.advancedatahub.com"
+          },
+          "serviceType": "App Development",
+          "areaServed": "Worldwide"
+        }
+      };
+    }
+  };
+
+  const seoData = getSEOData();
+
   return (
     <>
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonical={seoData.canonical}
+        structuredData={seoData.structuredData}
+      />
       <LandingHeader />
       <section id="banner" className="h-screen relative text-primary_text">
         <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background via-[#ffffffb5] to-background"></div>

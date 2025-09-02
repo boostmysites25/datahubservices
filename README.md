@@ -1,70 +1,190 @@
-# Getting Started with Create React App
+# Advance Data Hub - AI, Web & App Development Services
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Advance Data Hub is a leading provider of cutting-edge IT solutions including AI development, web development, app development, data science, machine learning, NLP, and blockchain solutions. Our services are built on ethical foundations, driving innovation with integrity.
 
-## Available Scripts
+## 🌐 Website
+**Live Site:** [https://www.advancedatahub.com/](https://www.advancedatahub.com/)
 
-In the project directory, you can run:
+## 🚀 Features
+- **AI Development**: Custom AI systems and intelligent automation
+- **Web Development**: Custom websites, e-commerce platforms, and web applications
+- **App Development**: iOS, Android, and cross-platform mobile applications
+- **Data Science**: Data analysis, visualization, and predictive modeling
+- **Machine Learning**: ML models for predictive analysis and insights
+- **NLP Services**: Natural Language Processing solutions and chatbots
+- **Blockchain**: Secure blockchain solutions and smart contracts
 
-### `npm start`
+## 🛠️ Tech Stack
+- **Frontend**: React.js 18, Tailwind CSS
+- **Routing**: React Router DOM
+- **SEO**: React Helmet, Structured Data (JSON-LD)
+- **Animations**: AOS (Animate On Scroll)
+- **Icons**: Lucide React
+- **Forms**: React Hook Form
+- **Notifications**: React Hot Toast
+- **Maps**: Leaflet, React Leaflet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📱 PWA Features
+- Progressive Web App support
+- Offline capabilities
+- Installable on mobile devices
+- Responsive design for all screen sizes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔍 SEO Implementation
 
-### `npm test`
+### Meta Tags
+- Comprehensive meta descriptions and keywords
+- Open Graph tags for social media sharing
+- Twitter Card support
+- Canonical URLs for all pages
+- Proper title tags with brand consistency
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Structured Data (JSON-LD)
+- Organization schema markup
+- Service schema markup
+- Contact page schema
+- About page schema
+- WebPage schema for main pages
 
-### `npm run build`
+### Technical SEO
+- XML Sitemap (`/sitemap.xml`)
+- Robots.txt with proper crawling instructions
+- Browser configuration for Windows tiles
+- .htaccess with compression and caching rules
+- HTTPS enforcement
+- www to non-www redirects
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Performance Optimization
+- Image lazy loading
+- Preconnect to external domains
+- Resource preloading
+- GZIP compression
+- Browser caching rules
+- Security headers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
+```
+src/
+├── components/          # Reusable components
+│   ├── SEO.jsx         # SEO component with React Helmet
+│   ├── website/        # Website-specific components
+│   └── landingPages/   # Landing page components
+├── pages/              # Page components
+│   ├── Home.jsx        # Homepage with SEO
+│   ├── AboutUs.jsx     # About page with SEO
+│   ├── Services.jsx    # Services page with SEO
+│   ├── ContactUs.jsx   # Contact page with SEO
+│   ├── LandingPage.jsx # Dynamic landing pages with SEO
+│   └── ThankYou.jsx    # Thank you page (noindex)
+├── assets/             # Images, icons, and other assets
+└── constant.js         # Routes and service data
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### Prerequisites
+- Node.js 16+ 
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
+```bash
+# Clone the repository
+git clone [repository-url]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Navigate to project directory
+cd datahubservices
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Start development server
+npm start
 
-## Learn More
+# Build for production
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Environment Variables
+Create a `.env` file in the root directory:
+```env
+REACT_APP_SITE_URL=https://www.advancedatahub.com
+REACT_APP_COMPANY_NAME=Advance Data Hub
+REACT_APP_CONTACT_EMAIL=advancedatahub@gmail.com
+REACT_APP_CONTACT_PHONE=+91-8630103782
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📊 SEO Metrics
+- **PageSpeed Insights**: Optimized for Core Web Vitals
+- **Mobile-First**: Responsive design for all devices
+- **Accessibility**: WCAG 2.1 AA compliant
+- **Schema Markup**: Rich snippets for search results
+- **Social Media**: Optimized Open Graph and Twitter Cards
 
-### Code Splitting
+## 🔧 Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Adding New Pages
+1. Create page component in `src/pages/`
+2. Import and use `SEO` component
+3. Add route to `src/constant.js`
+4. Update sitemap.xml
+5. Add structured data if applicable
 
-### Analyzing the Bundle Size
+### SEO Component Usage
+```jsx
+import SEO from '../components/SEO';
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+const MyPage = () => {
+  return (
+    <>
+      <SEO 
+        title="Page Title"
+        description="Page description"
+        keywords="relevant, keywords"
+        canonical="/page-url"
+        structuredData={structuredDataObject}
+      />
+      {/* Page content */}
+    </>
+  );
+};
+```
 
-### Making a Progressive Web App
+## 📈 Performance Monitoring
+- Web Vitals tracking
+- Lighthouse audits
+- Core Web Vitals monitoring
+- Performance optimization recommendations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔒 Security Features
+- XSS Protection headers
+- Content Type Options
+- Frame Options
+- Referrer Policy
+- Permissions Policy
 
-### Advanced Configuration
+## 📱 Mobile Optimization
+- Responsive design
+- Touch-friendly interfaces
+- Fast loading on mobile networks
+- PWA installation prompts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🌍 Internationalization Ready
+- Language attribute in HTML
+- Locale-specific meta tags
+- Structured data with language support
 
-### Deployment
+## 📞 Contact Information
+- **Email**: advancedatahub@gmail.com
+- **Phone**: +91-8630103782
+- **Address**: H.No-14, Bhairav Mandir Colony, Kankhal, Haridwar, Uttarakhand
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📄 License
+This project is proprietary software developed for Advance Data Hub.
 
-### `npm run build` fails to minify
+## 🤝 Contributing
+For internal development team use only. Please follow the established coding standards and SEO best practices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+**Built with ❤️ by Advance Data Hub Team**

@@ -30,7 +30,7 @@ export { logoImg };
 export const companyDetails = {
   phone: "+91-8630103782",
   address: "H.No-14, Bhairav Mandir Colony, Kankhal, Haridwar, Uttarakhand",
-  email: "abc@xyz.com",
+  email: "advancedatahub@gmail.com",
   linkedin: "",
   instagram: "",
   twitter: "",

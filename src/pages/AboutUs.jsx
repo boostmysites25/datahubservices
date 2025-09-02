@@ -3,6 +3,7 @@ import WebsiteHeader from "../components/website/WebsiteHeader";
 import PageBanner from "../components/website/PageBanner";
 import SubHeading from "../components/SubHeading";
 import aboutImg1 from "../assets/images/aboutus-img1.webp";
+import SEO from "../components/SEO";
 const TrustWorthySection = React.lazy(() =>
   import("../components/TrustWorthySection")
 );
@@ -17,8 +18,38 @@ const WhyChooseUs = React.lazy(() => import("../components/WhyChooseUs"));
 const LeadForm = React.lazy(() => import("../components/LeadForm"));
 
 const AboutUs = () => {
+  const aboutStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Advance Data Hub",
+    "description": "Bringing Your Vision to Life with Technology. Expert team of developers, designers, and strategists transforming digital ideas into dynamic online presence.",
+    "url": "https://www.advancedatahub.com/about-us",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Advance Data Hub",
+      "description": "We bring your digital ideas to life with expert development, design, and strategy services.",
+      "url": "https://www.advancedatahub.com",
+      "logo": "https://www.advancedatahub.com/logo.png",
+      "foundingDate": "2023",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "H.No-14, Bhairav Mandir Colony, Kankhal",
+        "addressLocality": "Haridwar",
+        "addressRegion": "Uttarakhand",
+        "addressCountry": "IN"
+      }
+    }
+  };
+
   return (
     <>
+      <SEO 
+        title="About Us - Bringing Your Vision to Life with Technology"
+        description="At Advance Data Hub, we bring your digital ideas to life. Expert team of developers, designers, and strategists transforming your vision into dynamic online presence."
+        keywords="about us, digital transformation, custom development, web design, app development, IT services, software development company"
+        canonical="/about-us"
+        structuredData={aboutStructuredData}
+      />
       <WebsiteHeader />
       <PageBanner title="About Us" />
       <section className="text-primary_text wrapper py-[3rem]">

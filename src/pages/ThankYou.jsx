@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { companyDetails, logoImg, routes } from "../constant";
+import SEO from "../components/SEO";
 import {
   ChevronRight,
   Instagram,
@@ -14,6 +15,13 @@ import {
 const ThankYou = () => {
   return (
     <>
+      <SEO 
+        title="Thank You - We'll Get Back to You Soon"
+        description="Thanks for contacting us, one of our associates will get in touch with you soon! We appreciate your interest in our services."
+        keywords="thank you, contact confirmation, inquiry received"
+        canonical="/thank-you"
+        noindex={true}
+      />
       <div className="h-[calc(100vh-18rem)] flex flex-col items-center justify-center">
         <div className="py-4 sticky top-0 w-full bg-secondary/60 backdrop-blur-md z-50 text-primary_text">
           <div className="wrapper flex justify-between items-center gap-10">

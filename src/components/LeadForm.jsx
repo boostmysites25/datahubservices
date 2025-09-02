@@ -38,9 +38,10 @@ const LeadForm = () => {
       to: companyDetails.email,
       subject: values.subject,
       body: emailBody,
+      name:"Data Hub Services"
     };
 
-    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+    await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
