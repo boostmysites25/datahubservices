@@ -14,6 +14,8 @@ import { lazy, Suspense } from "react";
 import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
+import GoogleTagManager from "./components/GoogleTagManager";
+import GoogleTagManagerHead from "./components/GoogleTagManagerHead";
 import { Toaster } from "react-hot-toast";
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
@@ -28,7 +30,9 @@ function App() {
   return (
     <Suspense fallback={<LoadingSpinner />}>
       <SpinnerContextProvider>
+          <GoogleTagManagerHead />
           <Router>
+            <GoogleTagManager />
             <LoadingSpinnerContext />
             <WhatsAppIcon />
             <ScrollToTop />

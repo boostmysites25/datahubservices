@@ -41,6 +41,12 @@ Advance Data Hub is a leading provider of cutting-edge IT solutions including AI
 - Canonical URLs for all pages
 - Proper title tags with brand consistency
 
+### Analytics & Tracking
+- Google Tag Manager (GTM-NQ27R533) integration
+- Automatic tracking on all pages
+- Enhanced ecommerce tracking ready
+- Custom event tracking capabilities
+
 ### Structured Data (JSON-LD)
 - Organization schema markup
 - Service schema markup
