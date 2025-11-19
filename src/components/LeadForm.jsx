@@ -172,7 +172,7 @@ const LeadForm = () => {
         </div>
         <button
           disabled={isSubmitting}
-          type="button"
+          type="submit"
           className="secondary-btn mt-3 w-full"
         >
           Submit

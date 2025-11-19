@@ -176,7 +176,7 @@ const ContactForm = () => {
           </div>
           <button
             disabled={isSubmitting}
-            type="button"
+            type="submit"
             className="secondary-btn mt-2"
           >
             Send Message
