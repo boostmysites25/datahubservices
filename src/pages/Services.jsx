@@ -13,7 +13,7 @@ const Services = () => {
   const servicesStructuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Advance Data Hub Services",
+    "name": "Advance Data Hub",
     "description": "Comprehensive IT services including AI development, web development, app development, data science, machine learning, NLP, and blockchain solutions.",
     "url": "https://www.advancedatahub.com/services",
     "itemListElement": [

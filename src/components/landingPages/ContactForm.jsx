@@ -39,7 +39,7 @@ const ContactForm = () => {
       to: companyDetails.email,
       subject: values.subject,
       body: emailBody,
-      name:"Data Hub Services"
+      name:"Advance Data Hub"
     };
 
     await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
